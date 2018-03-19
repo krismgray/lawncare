@@ -1,0 +1,17 @@
+.testTitle {
+  text-align: center;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: fantasy;
+
+}
+
+.background {
+
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  overflow: hidden;
+  height: 130vh;
+  width: 100%;
+}

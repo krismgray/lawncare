@@ -1,0 +1,78 @@
+.backdrop {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.slideshow {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+}
+
+.body1 {
+  height: 25vh;
+  width: 100%;
+}
+
+.body1p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.body1b {
+  text-align: center;
+}
+
+.body2 {
+  background-image: url('./images/body2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.body2p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.body3 {
+  display: inline-block;
+  height: 21vh;
+  width: 100%;
+}
+
+.footer {
+  height: 15vh;
+  width: 100%;
+  background-color: #326784;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footnote2 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+a:link {
+  color: white;
+}

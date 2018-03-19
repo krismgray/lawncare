@@ -1,0 +1,38 @@
+
+.content1 {
+  background-color: #339360;
+}
+
+.content1p {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content1p1 {
+  text-align: center;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content1p2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.list {
+  font-size: 25px;
+  list-style: circle;
+  display: grid;
+  justify-content: center;
+}
+
+.content2 {
+  background-image: url('./images/diagram1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}

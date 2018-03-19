@@ -1,0 +1,36 @@
+.box1 {
+  background-image: url('./images/back1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100%
+}
+
+.boxtop {
+  background-color: #FFD7A6;
+  height: 40vh;
+  width: 100%;
+}
+
+.box1p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.boxbottom {
+  height: 50vh;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.boxbp {
+  font-size: 20px;
+}
+
+.boxbp1 {
+  font-size: 35px;
+  font-style: normal;
+  padding-top: 40px;
+}
