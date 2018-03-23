@@ -5,6 +5,7 @@ import Login from './Login';
 import Slideshow from './Slideshow';
 import About from './About';
 import Testimonial from './Testimonial';
+import Admintheboss from './Admintheboss';
 import Contact from './Contact';
 import Footer from './Footer';
 import NavMenu from './NavMenu';
@@ -23,6 +24,7 @@ class App extends Component {
             <Route exact path='/About' component={About} />
             <Route exact path='/Contact' component={Contact} />
             <Route exact path='/Testimonial' component={Testimonial} />
+            <Route exact path='/Admintheboss' component={Admintheboss} />
             <Route component={NoMatch} />
           </Switch>
       </div>

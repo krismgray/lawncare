@@ -14,7 +14,7 @@ class Home extends Component {
         </div>
         <div className='boxtop'>
           <p className='box1p'>Contact us for Pricing or scheduling</p>
-          <p className='box1p'>Call us at (801)-706-7057</p>
+          <p className='box1p'>Call or text Kris at (801)-706-7057</p>
           <p className='box1p'>Or</p>
           <p className='box1p'>Email us at graylawncure@gmail.com or click the button on the bottom</p>
           <p className='box1p'>Ask us about our referal program for a discount!</p>

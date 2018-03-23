@@ -3,15 +3,25 @@
   font-size: 55px;
   font-weight: bold;
   font-family: fantasy;
-
+  color: white;
 }
 
 .background {
-
+  background-image: url('./images/background1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
   overflow: hidden;
   height: 130vh;
   width: 100%;
+}
+
+.listName {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.listRate {
+  font-size: 15px;
+  
 }

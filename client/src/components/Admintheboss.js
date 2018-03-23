@@ -9,7 +9,7 @@ const styles = {
   scroller: { height: '45vh', overflow: 'auto', width: '102%' }
 }
 
-class Testimonial extends React.Component {
+class Admintheboss extends React.Component {
   state = { name: '', body: '', value: '', posts: [], page: 1, totalPages: 0 }
 
   componentDidMount() {
@@ -40,6 +40,13 @@ class Testimonial extends React.Component {
 
   setRate = (e, { value }) => this.setState({ value })
 
+  deleteReview = id => {
+  const { name, rating, body } = this.state;
+  axios.delete(`/api/posts/${id}`)
+    .then( ({ data }) => {
+      this.setState({ posts: [name, body, rating], name: '' })
+    })
+}
 
   render() {
     const { name, posts, body, page, totalPages, value } = this.state;
@@ -104,6 +111,7 @@ class Testimonial extends React.Component {
                                   </div>
                                   <br />
                                   {post.body}
+                                  <Button basic onClick={ () => this.deleteReview(post.id)}>Delete</Button>
                                 </List.Content>
                             </List.Item>
                           </Container>
@@ -121,4 +129,4 @@ class Testimonial extends React.Component {
   }
 }
 
-export default Testimonial;
+export default Admintheboss;

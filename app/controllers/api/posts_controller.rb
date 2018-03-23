@@ -4,12 +4,17 @@ class Api::PostsController < ApplicationController
   end
 
   def create
-    post = Post.create( name: params[:name])
+    post = Post.create(name: params[:name], body: params[:body], value: params[:value] )
     render json: post
   end
 
   def destroy
     Post.find(params[:id]).destroy
+  end
+
+  private
+  def post_params
+    params.require(:name, :body, :rating)
   end
 
 end
