@@ -30,9 +30,12 @@
 }
 
 .content2 {
-  background-image: url('./images/diagram1.jpg');
+  display: flex;
+  justify-content: center;
+  background-image: url('./images/diagram2.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
+  background-size: 100%;
+  background-position: center;
+  min-height: 700px;
   width: 100%;
 }

@@ -7,12 +7,10 @@
 }
 
 .background {
-  background-image: url('./images/background1.jpg');
-  background-repeat: no-repeat;
+  background-image: url('./images/background2.jpg');
+  background-repeat: repeat;
   background-position: center;
-  position: fixed;
-  overflow: hidden;
-  height: 130vh;
+  min-height: 900px;
   width: 100%;
 }
 
@@ -23,5 +21,11 @@
 
 .listRate {
   font-size: 15px;
-  
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

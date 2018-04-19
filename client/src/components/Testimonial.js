@@ -1,5 +1,6 @@
 import React from 'react';
 import NavMenu from './NavMenu';
+import Footer from './Footer';
 import '../Testimonial.css';
 import { Button, Segment, Container, Header, Form, Input, List, TextArea, Icon, Loader, Rating } from 'semantic-ui-react';
 import axios from 'axios';
@@ -15,6 +16,10 @@ class Testimonial extends React.Component {
   componentDidMount() {
     axios.get('/api/posts')
       .then( ({ data: posts }) => this.setState({ posts }) )
+  }
+
+  componentWillMount() {
+
   }
 
   handleSubmit = e => {
@@ -42,13 +47,11 @@ class Testimonial extends React.Component {
 
 
   render() {
-    const { name, posts, body, page, totalPages, value } = this.state;
+    const { name, posts, body, value } = this.state;
     return(
       <div>
-        <div>
-          <NavMenu />
-        </div>
         <div className='background'>
+          <NavMenu />
           <div className='testTitle'>
             <p>How Was Our Service?</p>
           </div>
@@ -86,35 +89,37 @@ class Testimonial extends React.Component {
                   <Container>
                     <br />
                     <br />
-                    <List size='huge' style={styles.scroller}>
-                      <InfiniteScroll
-                        pageStart={page}
-                        loadMore={this.loadMore}
-                        hasMore={page < totalPages}
-                        loader={<Loader />}
-                        >
+                    <List size='huge'>
                       { posts.map( post =>
                         <Segment>
                           <Container>
                             <List.Item key={post.id}>
                                 <List.Content>
-                                  <div className='name/ratin'>
-                                    <List.Header className='listName'>{post.name}</List.Header>
-                                    <List.Header className='listRate'>{post.value}</List.Header>
-                                  </div>
-                                  <br />
+                                  <div className='info'>
+                                    <Header as='h1'>{post.name}</Header>
+                                    </div>
+                                    <div className='info'>
+                                    <Header as='h2'>{post.value}</Header>
+                                    </div>
+                                    <div className='info'>
+                                  <Header as='h5'>
                                   {post.body}
+                                </Header>
+                                </div>
                                 </List.Content>
                             </List.Item>
                           </Container>
                         </Segment>
                       )}
-                      </InfiniteScroll>
                     </List>
                 </Container>
 
               </div>
           </div>
+          <br />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     )

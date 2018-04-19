@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Menu } from 'semantic-ui-react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../Home.css';
 
@@ -12,7 +13,7 @@ class NavMenu extends Component {
     const { activeItem } = this.state
     return (
       <div className="navbar">
-        <Menu borderless size='huge'>
+        <Menu fluid borderless size='huge'>
           <Link to="/">
             <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleClick}>
               Home

@@ -1,50 +1,86 @@
 import React, { Component } from 'react';
 import { Header, Container, Segment, Button, Menu, Divider } from 'semantic-ui-react';
+import { Grid, Row, Col, Carousel } from 'react-bootstrap';
 import '../Home.css';
 import NavMenu from './NavMenu';
 import Footer from './Footer';
-import { Fade } from 'react-slideshow-image';
 import { Link } from 'react-router-dom';
 
-import image1 from '../images/01.jpg';
-import image2 from '../images/02.1.jpg';
-import image3 from '../images/03.1.jpg';
-import image4 from '../images/04.jpg';
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <NavMenu />
-        <div className='slide-container'>
-          <Fade
-            images={[ image1, image2, image3, image4 ]}
-            duration={4000}
-            transitionDuration={2000}
-            />
+        <div className="slideshow">
+          <NavMenu />
+        <div className='header'>
+          <Grid>
+            <Row>
+              <Col xs={12}>
+                <p>Gray Lawn Aeration</p>
+              </Col>
+            </Row>
+          </Grid>
+        </div>
+        <Container>
+          <Carousel>
+            <Carousel.Item>
+              <img src={require('../images/02.1.jpg')} />
+              <Carousel.Caption>
+                <h1>It's that time of year to Aerate!</h1>
+                <h3>Lawn aerating is a great way to break through compacted soil!</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={require('../images/03.1.jpg')} />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={require('../images/04.jpg')} />
+            </Carousel.Item>
+          </Carousel>
+        </Container>
+        <br />
+        <br />
         </div>
         <div className='body1'>
-          <Segment>
+          <br />
           <div>
-            <p className='body1p'>Don't know much about lawn aeration? Don't worry! We can explain
-              the benefits and get you scheduled today for a healthier lawn!
-            </p>
+            <Grid>
+              <Row>
+                <Col xs={12}>
+                  <p className='body1p'>Don't know much about lawn aeration? We can explain
+                    the benefits and get you scheduled today for a healthier lawn!
+                  </p>
+                </Col>
+              </Row>
+            </Grid>
           </div>
           <br />
             <div className='body1b'>
-              <Link to='/About'>
-                <Button primary size='huge'>Learn More!</Button>
-              </Link>
+              <Grid>
+                <Row>
+                  <Col xs={12}>
+                    <Link to='/About'>
+                      <Button primary size='huge'>Learn More!</Button>
+                    </Link>
+                  </Col>
+                </Row>
+              </Grid>
             </div>
             <br />
-          </Segment>
         </div>
         <div className='body2'>
-          <p className='body2p'>
-            Gray Lawn Care has been a local business for over 4 years. We provide a fast service and accomodate to your schedule.
-            We offer flags to mark sprinklers and clean up after oursleves. We pride ourselfs in providing an overall pleasent
-            experience and appreciate your business. Let us help you get the lawn that you want this summer!
-          </p>
+          <Grid>
+            <Row>
+              <Col xs={12}>
+                <p className='body2p'>
+                  Gray Lawn Care has been a local business for over 4 years. We provide a fast service and accomodate to your schedule.
+                  We offer flags to mark sprinklers and clean up after oursleves. We pride ourselfs in providing an overall pleasent
+                  experience and appreciate your business. Let us help you get the lawn that you want this summer!
+                </p>
+              </Col>
+            </Row>
+          </Grid>
         </div>
         <div className='body3'>
           <p className='body2p'>Contact Us for pricing and scheduling</p>

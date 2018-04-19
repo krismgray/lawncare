@@ -9,12 +9,12 @@
 
 .boxtop {
   background-color: #FFD7A6;
-  height: 40vh;
+  min-height: 300px;
   width: 100%;
 }
 
 .box1p {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -32,5 +32,9 @@
 .boxbp1 {
   font-size: 35px;
   font-style: normal;
-  padding-top: 40px;
+}
+
+.giphy {
+  display: flex;
+  justify-content: center;
 }

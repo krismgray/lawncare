@@ -3,7 +3,6 @@ import NavMenu from './NavMenu';
 import '../Testimonial.css';
 import { Button, Segment, Container, Header, Form, Input, List, TextArea, Icon, Loader, Rating } from 'semantic-ui-react';
 import axios from 'axios';
-import InfiniteScroll from 'react-infinite-scroller';
 
 const styles = {
   scroller: { height: '45vh', overflow: 'auto', width: '102%' }
@@ -94,12 +93,6 @@ class Admintheboss extends React.Component {
                     <br />
                     <br />
                     <List size='huge' style={styles.scroller}>
-                      <InfiniteScroll
-                        pageStart={page}
-                        loadMore={this.loadMore}
-                        hasMore={page < totalPages}
-                        loader={<Loader />}
-                        >
                       { posts.map( post =>
                         <Segment>
                           <Container>
@@ -117,7 +110,6 @@ class Admintheboss extends React.Component {
                           </Container>
                         </Segment>
                       )}
-                      </InfiniteScroll>
                     </List>
                 </Container>
 

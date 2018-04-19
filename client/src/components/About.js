@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Header, Menu, Button, Segment, Table } from 'semantic-ui-react';
+import { Header, Menu, Button, Segment } from 'semantic-ui-react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import NavMenu from './NavMenu';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
@@ -10,10 +11,12 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div>
-          <NavMenu />
-        </div>
+
         <div className='content1'>
+          <NavMenu />
+          <Grid>
+            <Row>
+              <Col xs={12}>
           <p className='content1p'>WHAT IS LAWN AERATION?</p>
           <br />
           <p className='content1p1'>
@@ -26,6 +29,9 @@ class Home extends Component {
           <p className='content1p2'>
             Here are some of the benefits of aerating your lawn
           </p>
+              </Col>
+            </Row>
+          </Grid>
           <div className='table'>
             <ul className='list'>
               <li>Enhanced soil water uptake</li>
@@ -48,7 +54,13 @@ class Home extends Component {
           </div>
         </div>
         <div className='content2'>
+          <Grid>
+            <Row>
+              <Col xs={12}>
 
+              </Col>
+            </Row>
+          </Grid>
         </div>
         <div>
           <Footer />
