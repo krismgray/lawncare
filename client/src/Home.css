@@ -43,10 +43,10 @@
 }
 
 .body2 {
-  background-image: url('./images/body2.jpeg');
+  background-image: url('./images/g3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 700px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -58,6 +58,12 @@
   font-size: 28px;
   font-weight: bold;
   color: white;
+}
+
+.body3p {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .body3 {
@@ -90,6 +96,7 @@ a:link {
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  background-color: #80A6BE;
 }
 
 .slideshow {

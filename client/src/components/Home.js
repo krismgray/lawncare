@@ -35,7 +35,7 @@ class Home extends Component {
               <img src={require('../images/03.1.jpg')} />
             </Carousel.Item>
             <Carousel.Item>
-              <img src={require('../images/04.jpg')} />
+              <img src={require('../images/g1.jpg')} />
             </Carousel.Item>
           </Carousel>
         </Container>
@@ -82,8 +82,9 @@ class Home extends Component {
             </Row>
           </Grid>
         </div>
+        <br />
         <div className='body3'>
-          <p className='body2p'>Contact Us for pricing and scheduling</p>
+          <p className='body3p'>Contact Us for pricing and scheduling</p>
           <div className='body2p'>
             <Link to='/Contact'>
               <Button size='huge' color='yellow'>Click here!</Button>
